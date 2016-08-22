@@ -13,6 +13,7 @@ table, th, tr, td {
 BODY {  font-family: 'Open Sans', sans-serif;
 		COLOR: #58585a /*The color of all the text within the body of the page*/ 
 }
+p.header { color:#2597b1; font-weight: bold;}
 p.footer { color:#FFF;}
 </style>
 </head>
@@ -31,7 +32,25 @@ p.footer { color:#FFF;}
   <th width="200px"></th><!--left column-->
   <td>
   <br><br>
-  <p>Hello</p>
+  <p class="header">Contact</p>
+  
+  
+<form action="action_page.php">
+  <fieldset>
+    <legend>Personal information:</legend>
+    Name:<br><input type="text" name="name" value="">
+    <br>
+    Email:<br>
+    <input type="text" name="email" value=""><br>
+    Your reason for contact:<Br>
+    <textarea rows="4" cols="50" name="comment" form="usrform"></textarea>
+
+
+    <br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
   <td> 
 </tr></table>
 
