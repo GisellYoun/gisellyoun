@@ -4,63 +4,122 @@
 <head>
 <style>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
 table, th, tr, td {
-    border: 0 solid black;
+    border: 0;
 	padding:0;
 	border-spacing:0; 
       border-collapse:collapse;
 }
+
 BODY {  font-family: 'Open Sans', sans-serif;
 		COLOR: #58585a /*The color of all the text within the body of the page*/ 
 }
-div.header { color:#2597b1; font-weight: bold; font-size:18px;}
+div.header { color:#2597b1; font-weight: bold; font-size:18px;} /*blue 2597b1 pink b62266 yellow f1bc1b*/
+a { color:#2597b1; font-size:14px; }
+div.small { color:#FFF;  font-size:5px;}
 div.footer { color:#FFF;  font-size:13px;}
 </style>
 </head>
 
 <table bgcolor="#58585a" width="1224px" height="30px"><!--Header-->
+  <tr height="3px"></tr><!--top margin-->
   <tr>
     <th width="5px"></th><!--left margin-->
-    <th align="left" width="1123"><img src ="images/logo_blue.jpg"></th>
-    <th width="30px"><img src="images/facebook.png" width="32px" height="32px"></th>
+    <th align="left" width="1100"><img src ="images/logo_blue.jpg"></th>
+    <th width="30px"><img src="images/facebook.png" width="30px" height="30px"></th>
     <th width="30px"><img src="images/twitter_w.png" width="30px" height="30px"></th>
     <th width="10px"></th><!--right margin-->
   </tr>
 </table>
 
-<table bgcolor="#f5f5f5" width="1224px"><tr><!--Main-->
-  <th width="200px"></th><!--left column-->
-  <td><img src="images/contact-us.jpg" width="800" height="200"><br><br>
-  <div class="header">Contact</div>
+<table bgcolor="#f5f5f5" width="1224px"><tr><!--Main 3 columns-->
+  <th width="200px" valign="top" bgcolor="#eeeeee" align="left"><!--left column-->
+  <img src ="images/opArt.jpe" width="200" height="199"><br><br>
+  <font color="#2597b1">&nbsp;&nbsp;&gt;&gt;&nbsp;</font><a href="http://www.gisellyoun.com">Return to HOME</a>
+  </th><!--left column ENDS-->
+  
+  <td><img src="images/contact-us.jpg" width="825" height="199"><br><br> <!--Main Column--->
+  <table><tr><td width="20"></td>
+  <td>
+  
+  <div class="header">Contact</div><br>
+  <p>Please ask me any questions regarding my services and I will reply back to you usually before the next business day.</p>
     
 <form action="action_page.php">
   <fieldset>
     <legend>Personal information:</legend>
-    Name:<br><input type="text" name="name" value="">
-    <br>
-    Email:<br>
-    <input type="text" name="email" value=""><br>
-    Your reason for contact:<Br>
-    <textarea rows="4" cols="50" name="comment" form="usrform"></textarea>
-
-
+    Name:<br><input type="text" name="name" value=""><br>
+    Email:<br><input type="text" name="email" value=""><br>
+    Phone:<br><input type="text" name="Phone" value=""><br>
+    Your reason for the contact:<Br>
+    <textarea rows="5" cols="50" name="comment" form="usrform"></textarea>
     <br><br>
     <input type="submit" value="Submit">
   </fieldset>
-</form>
-  <br><br>
-  <td> <th width="200px"></th><!--left column-->
-</tr></table>
+</form><br><br>
+  
+  </td>
+  <td width="20"></td><!--right margin--></tr>
+  
+  <tr><td></td>
+  <td></td>
+  <td></td></tr>
+  
+  </table>
+  </td>  <!--Main Column ENDS--->
+  
+  <th width="200px" valign="top" bgcolor="#eeeeee"><img src ="images/opArt.jpe" width="199" height="199">
+  </th><!--right column-->
+</tr></table><!--Main 3 columns ENDS-->
 
-<table bgcolor="#58585a" width="1224px" cellpadding="4">
-  <tr>    <th width="5px"></th><!--left margin-->
-  <td><div class="footer">Contact<br>
-  Gisell.Youn@gmail.com<br>
-  650 704 8951<br>
-  1910 Mount Vernon Ct. Unit12<br>
-  Mountain View CA 94040
-  </div>
-  <td></tr>
+<table width="1224px"><!--color 3 columns-->
+  <th width="200px" valign="top" bgcolor="#b62266" align="left"><div class="small">&nbsp;</div><!--left column-->
+  </th>
+  <th width="825px" valign="top" bgcolor="#2597b1" align="left"><div class="small">&nbsp;</div><!--left column-->
+  </th>
+  <th width="200px" valign="top" bgcolor="#f1bc1b"><div class="small">&nbsp;</div><!--right column-->
+  </th>
+</tr>
 </table>
+
+<table bgcolor="#58585a" width="1224px"><tr height="5px"></tr><!--FOOTER STARTS--->
+  <tr>    <th width="10px"></th><!--left margin-->
+  <th width="280px" align="left" valign="top"><div class="footer">EMAIL<br>
+  Gisell.Youn@gmail.com
+  </div></th>
+  <th width="280px" align="left" valign="top"><div class="footer">PHONE<br>
+  650 704 8951
+  </div></th>
+  <th width="280px" align="left" valign="top"><div class="footer">WEB<br>
+  GisellYoun.com
+  </div></th>  
+  <th width="384px" align="left" valign="top"><div class="footer">ADDRESS<br>
+  1910 Mount Vernon Ct. Unit 12 * Mountain View CA 94040
+  </div></th>
+  <th></th>
+  </tr><tr height="5px"></tr>
+</table><!--FOOTER ENDS--->
 
 </body></html>
