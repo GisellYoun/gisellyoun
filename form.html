@@ -25,39 +25,6 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-/*
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-	padding:0;
-}*/
-tr.spaceUnder > td
-{	/*padding-bottom: 0em; padding-left:0; padding-top:0; padding-right:0;*/
-}
-th.spaceUnder > td
-{	/*padding-bottom: 1em;*/
-    /*padding-bottom: 0em; padding-left:0; padding-top:0; padding-right:0;*/
-}
-
 
 table, th, tr, td {
     border: 0;
@@ -70,12 +37,13 @@ BODY {  font-family: 'Open Sans', sans-serif;
 		COLOR: #58585a /*The color of all the text within the body of the page*/ 
 }
 div.header { color:#2597b1; font-weight: bold; font-size:18px;}
+a { color:#2597b1; }
 div.footer { color:#FFF;  font-size:13px;}
 </style>
 </head>
 
 <table bgcolor="#58585a" width="1224px" height="30px"><!--Header-->
-  <tr class="spaceUnder">
+  <tr>
     <th width="5px"></th><!--left margin-->
     <th align="left" width="1100"><img src ="images/logo_blue.jpg"></th>
     <th width="30px"><img src="images/facebook.png" width="32px" height="32px"></th>
@@ -84,8 +52,11 @@ div.footer { color:#FFF;  font-size:13px;}
   </tr>
 </table>
 
-<table bgcolor="#f5f5f5" width="1224px"><tr class="spaceUnder"><!--Main-->
-  <th width="200px" valign="top" class="spaceUnder" bgcolor="#eeeeee"><img src ="images/opArt.jpe" width="200" height="199"></th><!--left column-->
+<table bgcolor="#f5f5f5" width="1224px"><tr><!--Main-->
+  <th width="200px" valign="top" bgcolor="#eeeeee" align="left"><!--left column-->
+  <img src ="images/opArt.jpe" width="200" height="199"><br><br>
+  <font color="#2597b1">&nbsp;&nbsp;&gt;&gt;&nbsp;</font><a href="http://www.gisellyoun.com">Return to HOME</a>
+  </th><!--left column ENDS-->
   
   <td><img src="images/contact-us.jpg" width="825" height="199"><br><br> <!--Main Column--->
   <table><tr><td width="20"></td>
@@ -100,7 +71,7 @@ div.footer { color:#FFF;  font-size:13px;}
     Name:<br><input type="text" name="name" value=""><br>
     Email:<br><input type="text" name="email" value=""><br>
     Phone:<br><input type="text" name="Phone" value=""><br>
-    Your reason for contact:<Br>
+    Your reason for the contact:<Br>
     <textarea rows="4" cols="50" name="comment" form="usrform"></textarea>
 
 
@@ -113,7 +84,7 @@ div.footer { color:#FFF;  font-size:13px;}
   <td width="20"></td></tr></table>
   </td>  <!--Main Column ENDS--->
   
-  <th width="200px" valign="top" class="spaceUnder" bgcolor="#eeeeee"><img src ="images/opArt.jpe" width="199" height="199">
+  <th width="200px" valign="top" bgcolor="#eeeeee"><img src ="images/opArt.jpe" width="199" height="199">
   </th><!--left column-->
 </tr></table>
  
