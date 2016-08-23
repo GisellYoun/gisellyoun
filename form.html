@@ -49,7 +49,12 @@ table {
     border-spacing: 0;
 	padding:0;
 }
-
+tr.spaceUnder > td
+{	padding-bottom: 1em;
+}
+th.spaceUnder > td
+{	padding-bottom: 1em;
+}
 
 /*
 table, th, tr, td {
@@ -67,7 +72,7 @@ div.footer { color:#FFF;  font-size:13px;}
 </head>
 
 <table bgcolor="#58585a" width="1224px" height="30px"><!--Header-->
-  <tr>
+  <tr class="spaceUnder">
     <th width="5px"></th><!--left margin-->
     <th align="left" width="1100"><img src ="images/logo_blue.jpg"></th>
     <th width="30px"><img src="images/facebook.png" width="32px" height="32px"></th>
@@ -76,9 +81,10 @@ div.footer { color:#FFF;  font-size:13px;}
   </tr>
 </table>
 
-<table bgcolor="#f5f5f5" width="1224px"><tr><!--Main-->
-  <th width="200px" valign="top"><img src ="images/opArt.jpe" width="200" height="200"></th><!--left column-->
-  <td><img src="http://www.gisellyoun.com/images/contact-us.jpg" width="824" height="200"><br><br>
+<table bgcolor="#f5f5f5" width="1224px"><tr class="spaceUnder"><!--Main-->
+  <th width="200px" valign="top" class="spaceUnder"><img src ="images/opArt.jpe" width="200" height="200"></th><!--left column-->
+  
+  <td><img src="images/contact-us.jpg" width="824" height="200"><br><br> <!--Main Column--->
   <div class="header">&nbsp;&nbsp;&nbsp;Contact</div><br>
     
 <form action="action_page.php">
@@ -96,7 +102,7 @@ div.footer { color:#FFF;  font-size:13px;}
   </fieldset>
 </form>
   <br><br>
-  </td><th width="200px" valign="top"><img src ="images/opArt.jpe" width="200" height="200"></th><!--left column-->
+  </td><th width="200px" valign="top" class="spaceUnder"><img src ="images/opArt.jpe" width="200" height="200"></th><!--left column-->
 </tr></table>
 
 <table bgcolor="#58585a" width="1224px" cellpadding="4">
