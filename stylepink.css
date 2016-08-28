@@ -68,7 +68,7 @@ bloggerever.com
 .lamp span {
     display:block;
     height:4px;
-    background:#b62266; /*ee6666*/
+    background:#f1bc1b; /*ee6666*/
     position: relative;
 }
 .lamp span:after {
@@ -81,7 +81,7 @@ bloggerever.com
     position: absolute;
     pointer-events: none;
     border-color: rgba(238, 102, 102, 0);
-    border-bottom-color: #b62266; /*ee6666*/
+    border-bottom-color: #f1bc1b; /*ee6666*/
     border-width: 4px;
     margin-left: -4px;
 }
