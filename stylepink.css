@@ -1,0 +1,104 @@
+/*
+Lava Lamp Navigation
+Developed By Mohammad Hamza
+bloggerever.com
+*/
+
+@import url(http://fonts.googleapis.com/css?family=family=Open+Sans:400, 700);
+ .nav a {
+    text-decoration:none;
+}
+.nav {
+    height:40px;  /*70*/
+    background:#f5f5f5;
+    position:relative;
+}
+.nav>ul {
+    position:relative;
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.nav>ul>li>ul {
+    position:absolute;
+    left:0;
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.nav>ul>li:hover>ul li a {
+    opacity:1;
+    height:50px;
+    transition:all .3s linear;
+    -o-transition:all .3s linear;
+    -moz-transition:all .3s linear;
+    -webkit-transition:all .3s linear;
+}
+.nav>ul>li>ul a {
+    display:block;
+    color:#222;
+    width:150px;
+    line-height:50px !important;
+    font:700 14px'pt sans', sans-serif;
+    background:#eee;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+    padding:0 5px;  /*5*/
+    height:0;
+    overflow:hidden;
+    opacity:0;
+    transition:all .3s linear .2s;
+    -o-transition:all .3s linear .2s;
+    -moz-transition:all .3s linear .2s;
+    -webkit-transition:all .3s linear .2s;
+}
+.nav>ul>li {
+    float:left;
+    position:relative;
+}
+.nav>ul>li>a {
+    padding:0 20px;
+    color:#b62266;  /*menu text color pink*/
+    display:block;
+    line-height:40px !important;  /*WAS 70 moved up the menu text*/
+    font:400 15px'PT Sans', sans-serif;
+    text-transform:uppercase;
+    text-decoration:none;
+}
+.lamp span {
+    display:block;
+    height:4px;
+    background:#b62266; /*ee6666*/
+    position: relative;
+}
+.lamp span:after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content:" ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(238, 102, 102, 0);
+    border-bottom-color: #b62266; /*ee6666*/
+    border-width: 4px;
+    margin-left: -4px;
+}
+.lamp {
+    position:absolute !important;
+    height:4px;
+    top:36px;  /*66*/
+    background:#333;
+    transition:all .3s linear;
+    -o-transition:all .3s linear;
+    -moz-transition:all .3s linear;
+    -webkit-transition:all .3s linear;
+}
+.selected.active>a, .active>a {
+    transition:all .3s linear;
+    -o-transition:all .3s linear;
+    -moz-transition:all .3s linear;
+    -webkit-transition:all .3s linear;
+    color:#fff;
+}
