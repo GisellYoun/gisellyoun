@@ -9,9 +9,14 @@
 <script type="text/javascript" src="jquery.lavalamp.min.js"></script>
 
 <script>
-$('#lavaLamp').lavalamp({
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+	$('#lavaLamp').lavalamp({
     easing: 'easeOutBack'
 });
+});
+
 </script>
 <link rel="stylesheet" type="text/css" href="stylepink.css" />
 <style>
