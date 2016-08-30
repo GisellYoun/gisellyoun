@@ -1,4 +1,7 @@
 /* Navigation Style */
+
+o = $.extend({ fx: "linear", speed: 500, classes: 'current', click: function(){} }, o || {});
+
 $(function(){
 if($('.nav>ul>li').hasClass('selected')){
 $('.selected').addClass('active');
