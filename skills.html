@@ -6,15 +6,16 @@
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script type="application/javascript" src="menu.js"></script>
 <script type="text/javascript">
-    $(function() {
-        $("#menutop").lavaLamp({
-            fx: "backout",
-            speed: 700,
-           click: function(event, menuItem) {
-                 return true;
-               }
-        });
-    }); //trying to have the lamp under the current link
+  o = $.extend({ fx: "linear", speed: 500, start_position: 0, click: function(){} }, o || {});
+  curr = $("li.current", this)[o.start_position] || $($li[o.start_position]).addClass("current")[0];
+    $("#navlinks").lavaLamp({
+    fx: "backout",//optional
+    speed: 700,
+    start_position: 1,//When page is loaded hover will be under Servidores
+    click: function(event, menuItem) {
+        return true;//so that you navigate to the appropriate link under 'li'
+    }
+}); //trying to have the lamp under the current link
 </script>
 
 <link rel="stylesheet" type="text/css" href="stylepink.css" />
