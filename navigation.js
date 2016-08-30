@@ -6,4 +6,6 @@ $('.tab').click(function(){ $('.tabs-wrap').hide(); //Hide all tab content
 
 $(function(){ $(".nav li a").click(function(e){ e.preventDefault(); //To prevent the default anchor tag behaviour 
 																 console.log("Loading " + url);
-		var url = this.href; $(".main").load(url); }); });
+		var url = this.href; 
+		 console.log("Loading " + url);
+		$(".main").load(url); }); });
