@@ -5,6 +5,18 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script type="application/javascript" src="menu.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $("#menutop").lavaLamp({
+            fx: "backout",
+            speed: 700,
+           click: function(event, menuItem) {
+                 return true;
+               }
+        });
+    }); //trying to have the lamp under the current link
+</script>
+
 <link rel="stylesheet" type="text/css" href="stylepink.css" />
 <style>
 
@@ -73,7 +85,7 @@ div.footerLink { color:#e09dbc; font-weight: bold; font-size:13px;}
   <tr><th width="750">&nbsp;</th>
       <th align="right"><!--Top links-->
         <div class='nav'>
-          <ul>
+          <ul class="menu-top" id="menutop">
             <li><a href='http://www.gisellyoun.com'>Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
             
             <li><a href='http://www.gisellyoun.com/portfolio'>PORTFOLIO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
