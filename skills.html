@@ -7,7 +7,17 @@
 <script type="application/javascript" src="menu.js"></script>
 <script language="javascript" type="text/javascript">
 o = $.extend({ fx: "linear", speed: 500, classes: 'current', click: function(){} }, o || {});
-$(function() { $("#menu_main").lavaLamp({ fx: "backout", speed: 700 ,classes : 'current_page_item'})});
+$(function(){
+ var url = window.location.pathname;  
+    var activePage = url.substring(url.lastIndexOf('/')+1);
+ $('.lavaLamp li a').each(function(){  
+    var currentPage = this.href.substring(this.href.lastIndexOf('/')+1);
+
+    if (activePage == currentPage) {
+    $(this).parent().addClass('current'); 
+ } 
+});
+})
 </script>
 
 <link rel="stylesheet" type="text/css" href="stylepink.css" />
@@ -78,7 +88,7 @@ div.footerLink { color:#e09dbc; font-weight: bold; font-size:13px;}
   <tr><th width="750">&nbsp;</th>
       <th align="right"><!--Top links-->
         <div class='nav'>
-          <ul class="menu_main" id="menu_main">
+          <ul class="lavaLamp" id="lavaLamp">
             <li><a href='http://www.gisellyoun.com'>Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
             
             <li><a href='http://www.gisellyoun.com/portfolio'>PORTFOLIO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
