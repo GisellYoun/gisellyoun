@@ -87,7 +87,7 @@ bloggerever.com
     margin-left: -4px;  /*-4  tiny triangle tick moves*/
 }
 .lamp {
-    position:absolute !important; 
+    position:absolute !important;
     height:4px;
     top:36px;  /*66*/
     background:#333;
@@ -101,5 +101,5 @@ bloggerever.com
     -o-transition:all .3s linear;
     -moz-transition:all .3s linear;
     -webkit-transition:all .3s linear;
-    color:#fff;
+    color:#f1bc1b;
 }
